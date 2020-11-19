@@ -1,0 +1,157 @@
+
+html{
+    background-color:#F0F2F5;
+    margin: 0;
+    padding: 0;
+}
+*{
+
+    font-family: "Roboto-Medium";
+    font-size: large;
+}
+/*****************Parent Container*****************************/
+.parentContainer
+{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.fixedContainer{
+    
+    grid-row-start: 1;
+    padding: 10px;
+    box-sizing:  border-box;
+    background-color: transparent;
+    color: black;
+    font-size: large;
+    background-color: #FFFFFF;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(15,10%);
+}
+/* inside Fixed Container */
+.icons{
+    color: #0A81EC;
+}
+
+/*****************New Container*****************************/
+.lowerContainer{
+    
+    display: grid;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    /* display: grid; */
+    grid-row-start: 2;
+    grid-auto-flow: column;
+    grid-template-columns: 25% 55% 20%;
+    z-index: 1;
+   
+} 
+/*****************New Container*****************************/
+    
+    
+
+.leftContainer{
+    
+    /* width: 25vw;
+    height: 100vh; */
+    box-sizing: border-box;
+    /* display: grid; */
+    grid-column-start: 1;
+    grid-template-columns: 1fr;
+}
+/* inside Left Container */
+.insidebox{
+    border: transparent;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    
+    
+}
+/* inside Left Container */
+.insidebox:hover
+{
+    background-color:#cfcfd3 ;
+}
+
+/*****************New Container*****************************/
+
+.middelContainer{
+
+    /* position: sticky; */
+   /* float: right; */
+   /* width: 25vw;
+   height: 100vh; */
+   margin: 5px;
+   padding: 5px;
+   box-sizing: border-box;
+   /* display: grid; */
+   
+   grid-column-start: 2;
+   display: grid;
+   grid-auto-flow: row;
+   grid-template-rows: max-content max-content auto;
+   border-radius: 20px;
+   border: none;
+   background-color:white;
+}
+
+.post
+{
+    
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-auto-flow: column;
+    align-items: center;
+    height: min-content ;
+    
+}
+img.profileimage
+{
+    margin: 2px;
+    padding: 2px;
+    border-radius: 50px;
+    
+}
+input.newpostText
+{
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    padding: 7px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #cfcfd3;
+}
+
+
+/*****************New Container*****************************/
+
+
+.rightContainer{
+    
+    top: 35px;
+    right: 0px;
+    
+    box-sizing: border-box;
+    /* display: grid; */
+    border-width: 1px;
+    grid-column-start: 3;
+   
+}
+/*****************New Container*****************************/
+
+
+
